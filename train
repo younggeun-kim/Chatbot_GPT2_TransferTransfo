@@ -23,7 +23,7 @@ def train_one_epoch(data_loader, model, optimizer, device):
       LM_logits = LM_logits.view(-1, 50260)
       LM_label = LM_label.view(-1)
       loss_LM = nn.CrossEntropyLoss()(LM_logits, LM_label)
-      loss_CLS = nn.BCEWithLogitsLoss()(CLS_logits, CLS_label)*2
+      loss_CLS = nn.BCEWithLogitsLoss()(CLS_logits, CLS_label)*0.5
       loss = loss_LM + loss_CLS
       total_loss += loss.item()
       if bi % 100 ==0:
