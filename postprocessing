@@ -107,7 +107,7 @@ def interact(personality, model):
   history = []
   chatbo=chatbot_model() #model
   chatbo=chatbo.to(device)
-  model = chatbo.load_state_dict(torch.load(PATH+'model:chat2'))
+  model = torch.load(PATH+'model:2')
   while True:
         raw_text = input(">>> ")
         while not raw_text:
