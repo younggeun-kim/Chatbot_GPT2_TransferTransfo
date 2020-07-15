@@ -58,6 +58,9 @@ def generate_some_text(input_str,token_type_ids, model): #50259ëŠ” [PAD], 50257ì
 
             cur_ids = torch.cat([cur_ids, torch.ones((1,1)).long().to(device) * next_token_id], dim = 1) # Add the last word 
             
+            if cur_ids.size(-1)-length>30:
+              break
+            
    
 
       output_list = list(cur_ids.squeeze().to('cpu').numpy())
