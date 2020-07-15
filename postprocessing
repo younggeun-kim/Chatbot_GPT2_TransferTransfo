@@ -1,3 +1,5 @@
+#postprocessing 부분은 수정해야 할 부분이 많은 것 같습니다 참고용도로만 봐주세요
+
 def make_input_chat(input): #interact에 사용될 chat을 알맞는 input의 형태로 변환시켜준다.
   input_ids = []
   ids = []
