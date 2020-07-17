@@ -1,7 +1,9 @@
 # Chatbot_GPT2_TransferTransfo
 TransferTransfo: Chatbot by using GPT2
 
-
+Dataset은 
+https://s3.amazonaws.com/datasets.huggingface.co/personachat/personachat_self_original.json
+을 사용하였다.
 
 TransferTransfo에 관한 이론은
 https://medium.com/@eyfydsyd97/transfertransfo-%EC%B5%9C%EC%8B%A0-nlp%EA%B8%B0%EC%88%A0%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%98%EC%97%AC-chat-bot-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0-%EB%85%BC%EB%AC%B8-%EC%84%A4%EB%AA%85-2dcaa12a5c33
