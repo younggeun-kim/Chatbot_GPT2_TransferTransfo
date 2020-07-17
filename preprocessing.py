@@ -1,5 +1,7 @@
 # 어떤 데이터를 사용하냐와 데이터 전처리를 어떻게 하냐에 따라 모델의 성능이 크게 달라집니다. 모델의 성능을 더 좋게 수정할 수 있을 것 같습니다. 추후에 수정하겠습니다.
 import json
+# 데이터
+!wget https://s3.amazonaws.com/datasets.huggingface.co/personachat/personachat_self_original.json
 
 # Download and load JSON dataset
 with open('personachat_self_original.json', "r", encoding="utf-8") as f:
