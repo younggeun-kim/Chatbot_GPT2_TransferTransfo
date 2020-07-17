@@ -1,3 +1,4 @@
+# 어떤 데이터를 사용하냐와 데이터 전처리를 어떻게 하냐에 따라 모델의 성능이 크게 달라집니다. 모델의 성능을 더 좋게 수정할 수 있을 것 같습니다. 추후에 수정하겠습니다.
 import json
 
 # Download and load JSON dataset
@@ -79,7 +80,7 @@ real_H_data = make_input_H(persona, history, spokerB_real)
 fake_H_data1 = make_input_H(persona, history, spokerB_distract1)
 
 #<bos>+[persona]+<SP2>+[utr]+<SP1>+[utr]+<EOS>+<PAD>
-def make_input_ids(input, max_len=96):
+def make_input_ids(input, max_len=128):
   input_ids = []
   max_len=max_len
   for i in range(len(input)):
